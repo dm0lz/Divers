@@ -1,0 +1,130 @@
+!!! 5
+%html
+  %head
+    %link(rel='stylesheet' type='text/css' href='/css/bootstrap.css')/
+    %link(rel='stylesheet' type='text/css' href='/css/bootstrap-responsive.css')/
+    %link(rel='stylesheet' type='text/css' href='/css/font-awesome.css')/
+    %link(rel='stylesheet' type='text/css' href='/style.css')/
+    %meta(content='yes' name='apple-mobile-web-app-capable')/
+    %meta(content='width=device-width; initial-scale=1.0; maximum-scale=1.0;' name='viewport')/
+    /[if lt IE 9]
+      %script(type='text/javascript' src='https://raw.github.com/aFarkas/html5shiv/master/dist/html5shiv.js')
+  %body
+    %nav
+      %aside.container-fluid
+        %section.campaign.row-fluid
+          %a.span4
+            %article
+              %h2 
+                %i.icon-dashboard
+                Dashboards
+          %a.span4
+            %article
+              %h2 
+                %i.icon-columns
+                Communication
+          %a.span4
+            %article
+              %h2 
+                Integra
+        .clearfix 
+
+        %section.notifications.row-fluid
+          %a.span3
+            %article
+              %h2 Coca Cola
+              %p A description
+          %a.span3
+            %article
+              %h2 Sprite
+              %p A description
+          %a.span3
+            %article
+              %h2 Pepsi
+              %p A description
+          %a.span3
+            %article
+              %h2 Epika
+              %p A description
+        .clearfix
+
+        %section.user.row-fluid
+          %a.span4
+            %article
+              %h2
+                %i.icon-user
+                Yo
+              %p Datos sobre mí
+          %a.span4
+            %article
+              %h2
+                %i.icon-cogs
+                Settings
+          %a.span4
+            %article
+              %h2
+                %i.icon-off
+                Log out
+      %section.navbar#nav
+        .navbar-inner
+          %ul.nav
+            %li
+              %a.brand.home
+                %i.icon-off
+            %li
+              %a.brand(rel='campaign')
+                Coca Cola
+                %span.badge.badge-inverse 10
+            %li.divider-vertical
+          %form.navbar-form.input-append.pull-left
+            %input.input-medium(type='text' placeholder='Search')
+            %button.btn(type='submit')
+              %i.icon-search
+          %ul.nav.pull-right
+            %li#notifications
+              %a(rel='notifications')
+                %i.icon-flag
+                Notificaciones
+                %span.badge.badge-inverse 10
+            %li
+              %a(rel='user')
+                %i.icon-user
+                Yo
+
+    %section.container-fluid#columns
+      %header      
+        %button.btn.active.btn-mini
+        %button.btn.btn-mini
+        %button.btn.btn-mini
+
+      %section.board
+        %section.row-fluid.board-inner
+          %section.column
+            %header
+              %span.badge.badge-info
+                %i.icon-plane            
+              %span.badge.badge-success
+                %i.icon-dashboard
+          %section.column
+            %header
+              %span.badge.badge-info
+                %i.icon-dashboard
+              %span.badge.badge-success 
+                %i.icon-gift               
+          %section.column
+            %header
+              %span.badge.badge-info
+                %i.icon-glass
+              %span.badge.badge-info
+                %i.icon-signout
+          %section.column
+            %header
+              %span.badge.badge-info
+                %i.icon-glass
+              %span.badge.badge-info
+                %i.icon-signout
+
+    %script(type='text/javascript' src='/js/jquery.js')
+    %script(type='text/javascript' src='/js/jquery.easing.js')
+    %script(type='text/javascript' src='/js/bootstrap.js')
+    %script(type='text/javascript' src='/script.js')

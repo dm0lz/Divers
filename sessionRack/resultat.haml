@@ -1,0 +1,23 @@
+!!! 5
+%html
+  %head
+    %title resultat
+    %link(rel="stylesheet" type="text/javascript" href="/css/bootstrap.css")/
+    %link(rel='stylesheet' type='text/css' href='/style.css')
+  %body
+    %nav
+      %header 
+        %h1 Fetcher pass the Hash !!!
+      %section.navbar-inner
+
+      %section.resultat
+        Voici les parametres passes :
+        - if not @email.nil?
+          = @email
+        - if not @password.nil?
+          = @password
+
+    %script(type='text/javascript' src='/js/jquery.js')
+    %script(type='text/javascript' src='/js/test.js')
+
+

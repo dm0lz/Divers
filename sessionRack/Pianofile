@@ -1,0 +1,28 @@
+require "pry"
+
+set :haml, :format => :html5
+enable :sessions
+
+get '/' do
+  haml :index
+end
+
+post '/resultat' do
+
+  session[:email] = params[:inputEmail]
+  session[:password] = params[:inputPassword]
+
+#binding.pry
+  redirect '/resultat'
+end
+
+get '/resultat' do
+
+  @email = session[:email]
+  @password = session[:password]
+#binding.pry
+  haml :resultat
+end
+
+
+

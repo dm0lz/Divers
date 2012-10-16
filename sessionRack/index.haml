@@ -1,0 +1,32 @@
+!!! 5
+%html
+  %head
+    %title test de session
+    %link(rel="stylesheet" type="text/javascript" href="/css/bootstrap.css")/
+    %link(rel='stylesheet' type='text/css' href='/style.css')
+  %body
+    %nav
+      %header 
+        %h1 Fetcher !!!
+      %section.navbar-inner
+    %section.container
+      %form.form-horizontal(method="post" action="/resultat")
+        .control-group 
+        %br
+          .controls
+            %input(type="text" name="inputEmail" placeholder="Email")
+          %br
+          .controls
+            %input(type="password" name="inputPassword" placeholder="Password")
+        .control-group.controls
+          %input(type="checkbox") Remember me
+          - 2.times do 
+            %br 
+          %button.btn(type="submit") 
+            Sign In
+
+
+    %script(type='text/javascript' src='/js/jquery.js')
+    %script(type='text/javascript' src='/js/test.js')
+
+
